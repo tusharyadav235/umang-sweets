@@ -56,14 +56,23 @@ jobs:
 
       - name: Execute Remote SSH Commands
         uses: appleboy/ssh-action@v1.0.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACTOR: ${{ github.actor }}
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           port: 22
+          envs: GITHUB_TOKEN, GITHUB_ACTOR
           script: |
             cd ~/umang-sweets
-            # Pull the latest image and restart
+            # Login to GHCR registry from EC2
+            echo "$GITHUB_TOKEN" | sudo docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
+            # Pull the latest image and restart the container
             sudo docker compose pull
             sudo docker compose down
             sudo docker compose up -d
+            # Clean up old unused images to save disk space on EC2
+            sudo docker image prune -f
+
