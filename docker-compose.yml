@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   umang-sweets:
-    image: ghcr.io/ujjawalyadav/umang-sweets:latest
+    image: ghcr.io/tusharyadav235/umang-sweets:latest
     container_name: umang-sweets-app
     ports:
       - "80:80"

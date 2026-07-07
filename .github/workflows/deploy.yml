@@ -33,7 +33,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/ujjawalyadav/umang-sweets:latest
+          tags: ghcr.io/tusharyadav235/umang-sweets:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
