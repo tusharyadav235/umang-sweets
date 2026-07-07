@@ -233,6 +233,16 @@ function renderBasket() {
   if (drawerItems) drawerItems.innerHTML = itemsHTML;
   if (totalVal) totalVal.innerText = `₹${totalPrice}`;
   
+  // Dynamic show/hide checkout form
+  const checkoutForm = document.getElementById('cart-checkout-form');
+  if (checkoutForm) {
+    if (basketKeys.length > 0) {
+      checkoutForm.style.display = 'flex';
+    } else {
+      checkoutForm.style.display = 'none';
+    }
+  }
+  
   // Render Inline Add/+/- controls in the menu section
   const controls = document.querySelectorAll('.dish-control');
   controls.forEach(ctrl => {
@@ -256,7 +266,7 @@ function renderBasket() {
   });
 }
 
-// Compile order list and open WhatsApp
+// Compile order list with customer details and open WhatsApp
 function placeCartOrder() {
   const basketKeys = Object.keys(basket);
   if (basketKeys.length === 0) {
@@ -264,7 +274,28 @@ function placeCartOrder() {
     return;
   }
   
-  let orderText = "Hello Umang Sweets! I would like to place an order for:\n\n";
+  // Retrieve form details
+  const nameInput = document.getElementById('checkout-name');
+  const phoneInput = document.getElementById('checkout-phone');
+  const addressInput = document.getElementById('checkout-address');
+  
+  const name = nameInput ? nameInput.value.trim() : '';
+  const phone = phoneInput ? phoneInput.value.trim() : '';
+  const address = addressInput ? addressInput.value.trim() : '';
+  
+  if (!name || !phone || !address) {
+    alert("Please fill in your Name, Phone Number, and Delivery Address to place the order!");
+    return;
+  }
+  
+  let orderText = "Hello Umang Sweets! I would like to place an order:\n\n";
+  
+  orderText += `👤 *Customer Details:*\n`;
+  orderText += `- *Name:* ${name}\n`;
+  orderText += `- *Phone:* ${phone}\n`;
+  orderText += `- *Address:* ${address}\n\n`;
+  
+  orderText += `📦 *Order Items:*\n`;
   let grandTotal = 0;
   
   basketKeys.forEach((name, index) => {

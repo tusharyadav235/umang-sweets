@@ -721,6 +721,14 @@
       <p class="cart-empty-message">Your basket is empty.<br>Add some delicious items!</p>
     </div>
     <div class="cart-drawer-footer">
+      <!-- Checkout Details Form -->
+      <div class="cart-checkout-form" id="cart-checkout-form" style="display: none; flex-direction: column; gap: 12px; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 20px;">
+        <h4 style="font-family: var(--font-display); color: var(--color-primary); font-size: 0.95rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">Delivery Details</h4>
+        <input type="text" id="checkout-name" placeholder="Your Name" style="width: 100%; padding: 10px 14px; border-radius: 8px; background-color: rgba(255,255,255,0.03); border: 1px solid var(--color-border); color: #fff; font-family: var(--font-body); font-size: 0.85rem;" required>
+        <input type="tel" id="checkout-phone" placeholder="WhatsApp / Phone Number" style="width: 100%; padding: 10px 14px; border-radius: 8px; background-color: rgba(255,255,255,0.03); border: 1px solid var(--color-border); color: #fff; font-family: var(--font-body); font-size: 0.85rem;" required>
+        <textarea id="checkout-address" placeholder="Full Delivery Address" rows="2" style="width: 100%; padding: 10px 14px; border-radius: 8px; background-color: rgba(255,255,255,0.03); border: 1px solid var(--color-border); color: #fff; font-family: var(--font-body); font-size: 0.85rem; resize: none;" required></textarea>
+      </div>
+
       <div class="cart-total-row">
         <span>Total:</span>
         <span id="cart-total-val">₹0</span>
