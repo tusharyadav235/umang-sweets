@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umang Sweets - Premium Artisanal Sweets & Luxury Mithai Gifting</title>
+  <meta name="description" content="Experience the finest artisanal Indian sweets at Umang Sweets. Crafted with premium ingredients, legacy recipes, and contemporary presentation. Order custom luxury hampers.">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Phosphor Icons for premium aesthetic -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+  <!-- Navigation Header (Height cap: 80px, Desktop Single Line) -->
+  <nav class="navbar" id="main-nav">
+    <div class="navbar-container">
+      <a href="#" class="logo-link">
+        <img src="Umang_sweetslogo.png" alt="Umang Sweets Logo" class="logo-img">
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#" class="nav-link">Our Story</a></li>
+        <li><a href="#menu-section" class="nav-link">Explore Menu</a></li>
+      </ul>
+      
+      <div>
+        <a href="#menu-section" class="btn btn-primary nav-cta-btn">Order Online</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Video Hero Section (min-h-[100dvh], Hero stack discipline: max 4 text items) -->
+  <header class="hero">
+    <video class="hero-video-bg" autoplay loop muted playsinline id="hero-video">
+      <source src="USvideo2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    <div class="hero-overlay"></div>
+    
+    <div class="container hero-container">
+      <div class="hero-content-card">
+        <!-- Eyebrow brand label -->
+        <span class="eyebrow">Umang Sweets</span>
+        
+        <h1 class="hero-headline" style="font-size: 4.5rem; font-weight: 900; letter-spacing: 0.05em; margin-bottom: 20px;">शुद्ध स्वाद</h1>
+        
+        <!-- Shorter subtext tag -->
+        <p class="hero-subtext" style="font-size: 1.15rem; max-width: 35ch;">
+          Handcrafted Indian sweets, made with absolute purity and traditional love.
+        </p>
+        
+        <div class="hero-actions">
+          <a href="#menu-section" class="btn btn-primary">Explore Menu</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Immersive scroll indicator -->
+    <div class="scroll-indicator">
+      <span>SCROLL TO EXPLORE</span>
+      <i class="ph ph-caret-down" style="font-size: 1.2rem;"></i>
+    </div>
+  </header>
+
+  <!-- Section Separator Line -->
+  <div class="section-separator"></div>
+
+  <!-- Section 1.5: Our Story & Gallery (Introductory visual split grid) -->
+  <section class="section" id="story-section" style="background-color: var(--color-bg-base); padding: 120px 0 80px;">
+    <div class="container">
+      <div class="story-grid">
+        
+        <!-- Left: Gallery Stack Effect -->
+        <div class="reveal" style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 440px; position: relative;">
+          <!-- Card stack container -->
+          <div id="gallery-stack" style="width: 320px; height: 320px; position: relative;">
+            <!-- Rendered dynamically by script.js -->
+          </div>
+          
+          <!-- Interactive Badge hint -->
+          <div style="position: relative; margin-top: 40px; background-color: rgba(20, 3, 3, 0.85); border: 1px solid var(--color-border); padding: 8px 16px; border-radius: 99px; font-size: 0.8rem; font-family: var(--font-display); letter-spacing: 0.05em; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); pointer-events: none; z-index: 100;">
+            <i class="ph ph-hand-tap" style="color: var(--color-primary); font-size: 1rem;"></i>
+            <span>TAP IMAGE TO SWIPE</span>
+          </div>
+        </div>
+        
+        <!-- Right: Story Details -->
+        <div class="reveal" style="display: flex; flex-direction: column; gap: 24px;">
+          <span class="eyebrow" style="color: var(--color-primary);">SINCE INCEPTION</span>
+          <h2 class="hero-headline" style="font-size: 3rem; line-height: 1.1;">शुद्धता और परंपरा<br><span style="font-size: 2.2rem; color: var(--color-primary);">A Legacy of Purity</span></h2>
+          <p style="font-size: 1.05rem; color: var(--color-text-primary); line-height: 1.7; max-width: 55ch;">
+            Nestled in the heart of Aminagar Sarai, <strong>Umang Sweets</strong> has been crafting smiles and sweetening life’s greatest milestones. Our heritage lies in the absolute purity of ingredients. From rich <em>desi ghee</em> and organic saffron to daily-sourced milk cream, every confection is a testament to quality.
+          </p>
+          <p style="font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.7; max-width: 55ch;">
+            Whether it is our signature Rajasthani honeycomb Ghewars, soft spongy Bengali Ras-Malais, or premium dry fruit Laddus, we honor traditional culinary recipes while offering elegant gifting boxes for your special occasions.
+          </p>
+          <div style="margin-top: 10px;">
+            <a href="#menu-section" class="btn btn-secondary">Explore Our Collection</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Separator Line -->
+  <div class="section-separator"></div>
+
+  <!-- Section 2: Culinary Menu (Interactive category tabs with images) -->
+  <section class="section section-darker" id="menu-section">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: center; margin: 0 auto 60px;">
+        <span class="eyebrow" style="color: var(--color-primary);">OUR KITCHEN SELECTIONS</span>
+        <h2 class="hero-headline" style="font-size: 3rem;">Explore Our Menu</h2>
+        <p style="margin: 0 auto; max-width: 60ch;">Browse our hand-crafted menu items, prepared daily with absolute purity and rich traditional spices.</p>
+      </div>
+
+      <!-- Menu Category Tabs -->
+      <div class="reveal menu-tabs-wrapper">
+        <button class="btn btn-secondary active-tab" onclick="switchMenuCategory('sweets', this)" style="border-radius: 20px; padding: 10px 24px;">Sweets</button>
+        <button class="btn btn-secondary" onclick="switchMenuCategory('bengali', this)" style="border-radius: 20px; padding: 10px 24px;">Bengali Sweets</button>
+        <button class="btn btn-secondary" onclick="switchMenuCategory('laddus', this)" style="border-radius: 20px; padding: 10px 24px;">Laddus</button>
+        <button class="btn btn-secondary" onclick="switchMenuCategory('south', this)" style="border-radius: 20px; padding: 10px 24px;">South Indian</button>
+        <button class="btn btn-secondary" onclick="switchMenuCategory('curries', this)" style="border-radius: 20px; padding: 10px 24px;">North Indian</button>
+        <button class="btn btn-secondary" onclick="switchMenuCategory('breads', this)" style="border-radius: 20px; padding: 10px 24px;">Tandoori Breads</button>
+        <button class="btn btn-secondary" onclick="switchMenuCategory('rice', this)" style="border-radius: 20px; padding: 10px 24px;">Rice & Salad</button>
+        <button class="btn btn-secondary" onclick="switchMenuCategory('starters', this)" style="border-radius: 20px; padding: 10px 24px;">Chinese Starters</button>
+        <button class="btn btn-secondary" onclick="switchMenuCategory('tandoori-snacks', this)" style="border-radius: 20px; padding: 10px 24px;">Tandoori Snacks</button>
+        <button class="btn btn-secondary" onclick="switchMenuCategory('chaat', this)" style="border-radius: 20px; padding: 10px 24px;">Chaat Chatpata</button>
+      </div>
+
+      <!-- Tab Categories Container -->
+      <div class="reveal">
+        
+        <!-- Category 1: Sweets -->
+        <div class="menu-category-panel active" id="category-sweets">
+          <div class="menu-layout-grid">
+            <!-- Featured Dish -->
+            <div class="menu-featured-card">
+              <img src="ghewar_mava.png" alt="Ghewar Mava" class="menu-featured-img">
+              <div class="menu-featured-info">
+                <span class="menu-featured-tag">Signature Sweet</span>
+                <h3>Ghewar Mava</h3>
+                <p>Traditional Rajasthani honeycomb sweet soaked in cardamom syrup, layered with luxurious mava and silver leaf.</p>
+                <span class="menu-featured-price">₹400 / kg</span>
+              </div>
+            </div>
+            <!-- All Sweets List -->
+            <div class="menu-items-list">
+              <div class="menu-column">
+                <div class="menu-dish-row"><span class="dish-name">Ghewar Mava</span><span class="dish-dots"></span><span class="dish-price">₹400 / kg</span><div class="dish-control" data-dish="Ghewar Mava" data-price="400"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Ghewar Sada</span><span class="dish-dots"></span><span class="dish-price">₹300 / kg</span><div class="dish-control" data-dish="Ghewar Sada" data-price="300"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Loki Burfi</span><span class="dish-dots"></span><span class="dish-price">₹400 / kg</span><div class="dish-control" data-dish="Loki Burfi" data-price="400"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Doodh Burfi</span><span class="dish-dots"></span><span class="dish-price">₹400 / kg</span><div class="dish-control" data-dish="Doodh Burfi" data-price="400"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Kesar Burfi</span><span class="dish-dots"></span><span class="dish-price">₹400 / kg</span><div class="dish-control" data-dish="Kesar Burfi" data-price="400"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Sunhari Burfi</span><span class="dish-dots"></span><span class="dish-price">₹400 / kg</span><div class="dish-control" data-dish="Sunhari Burfi" data-price="400"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Pista Burfi</span><span class="dish-dots"></span><span class="dish-price">₹400 / kg</span><div class="dish-control" data-dish="Pista Burfi" data-price="400"></div></div>
+              </div>
+              <div class="menu-column">
+                <div class="menu-dish-row"><span class="dish-name">Goond Burfi</span><span class="dish-dots"></span><span class="dish-price">₹450 / kg</span><div class="dish-control" data-dish="Goond Burfi" data-price="450"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Dodha Burfi</span><span class="dish-dots"></span><span class="dish-price">₹360 / kg</span><div class="dish-control" data-dish="Dodha Burfi" data-price="360"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Kaju Burfi</span><span class="dish-dots"></span><span class="dish-price">₹860 / kg</span><div class="dish-control" data-dish="Kaju Burfi" data-price="860"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Gola Burfi</span><span class="dish-dots"></span><span class="dish-price">₹360 / kg</span><div class="dish-control" data-dish="Gola Burfi" data-price="360"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Choklate Burfi</span><span class="dish-dots"></span><span class="dish-price">₹450 / kg</span><div class="dish-control" data-dish="Choklate Burfi" data-price="450"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Til Bugga Burfi</span><span class="dish-dots"></span><span class="dish-price">₹400 / kg</span><div class="dish-control" data-dish="Til Bugga Burfi" data-price="400"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Kalakand</span><span class="dish-dots"></span><span class="dish-price">₹340 / kg</span><div class="dish-control" data-dish="Kalakand" data-price="340"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Gulab Jamun</span><span class="dish-dots"></span><span class="dish-price">₹220 / kg</span><div class="dish-control" data-dish="Gulab Jamun" data-price="220"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Kala Jaam</span><span class="dish-dots"></span><span class="dish-price">₹240 / kg</span><div class="dish-control" data-dish="Kala Jaam" data-price="240"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Bengali Sweets -->
+        <div class="menu-category-panel" id="category-bengali">
+          <div class="menu-layout-grid">
+            <!-- Featured Dish -->
+            <div class="menu-featured-card">
+              <img src="ras_malai.png" alt="Ras-Malai" class="menu-featured-img">
+              <div class="menu-featured-info">
+                <span class="menu-featured-tag">Fresh Bengali Specialty</span>
+                <h3>Ras-Malai</h3>
+                <p>Delicate, spongy cottage cheese discs soaked in saffron-infused thickened milk, finished with almonds.</p>
+                <span class="menu-featured-price">₹380 / kg</span>
+              </div>
+            </div>
+            <!-- All Bengali Sweets List -->
+            <div class="menu-items-list">
+              <div class="menu-column">
+                <div class="menu-dish-row"><span class="dish-name">Bangali Stori</span><span class="dish-dots"></span><span class="dish-price">₹300 / kg</span><div class="dish-control" data-dish="Bangali Stori" data-price="300"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Cham Cham</span><span class="dish-dots"></span><span class="dish-price">₹300 / kg</span><div class="dish-control" data-dish="Cham Cham" data-price="300"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Cream Cham Cham</span><span class="dish-dots"></span><span class="dish-price">₹200 / kg</span><div class="dish-control" data-dish="Cream Cham Cham" data-price="200"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Cream Tarbooj</span><span class="dish-dots"></span><span class="dish-price">₹380 / kg</span><div class="dish-control" data-dish="Cream Tarbooj" data-price="380"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Ras-Malai</span><span class="dish-dots"></span><span class="dish-price">₹380 / kg</span><div class="dish-control" data-dish="Ras-Malai" data-price="380"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Rabdi</span><span class="dish-dots"></span><span class="dish-price">₹400 / kg</span><div class="dish-control" data-dish="Rabdi" data-price="400"></div></div>
+              </div>
+              <div class="menu-column">
+                <div class="menu-dish-row"><span class="dish-name">Chhena Toast</span><span class="dish-dots"></span><span class="dish-price">₹400 / kg</span><div class="dish-control" data-dish="Chhena Toast" data-price="400"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Keshri Petha</span><span class="dish-dots"></span><span class="dish-price">₹380 / kg</span><div class="dish-control" data-dish="Keshri Petha" data-price="380"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Paan Petha</span><span class="dish-dots"></span><span class="dish-price">₹380 / kg</span><div class="dish-control" data-dish="Paan Petha" data-price="380"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Jalebi</span><span class="dish-dots"></span><span class="dish-price">₹160 / kg</span><div class="dish-control" data-dish="Jalebi" data-price="160"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Gajar Halwa</span><span class="dish-dots"></span><span class="dish-price">₹400 / kg</span><div class="dish-control" data-dish="Gajar Halwa" data-price="400"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Laddus -->
+        <div class="menu-category-panel" id="category-laddus">
+          <div class="menu-layout-grid">
+            <!-- Featured Dish -->
+            <div class="menu-featured-card">
+              <img src="saffron_sweets.png" alt="Dry Fruit Laddu" class="menu-featured-img">
+              <div class="menu-featured-info">
+                <span class="menu-featured-tag">Nutritious Delight</span>
+                <h3>Dry Fruit Laddu</h3>
+                <p>Pure ghee laddu loaded with premium chopped cashews, almonds, pistachios, dates, and cardamom.</p>
+                <span class="menu-featured-price">₹760 / kg</span>
+              </div>
+            </div>
+            <!-- All Laddus List -->
+            <div class="menu-items-list">
+              <div class="menu-column">
+                <div class="menu-dish-row"><span class="dish-name">Boondi Laddu</span><span class="dish-dots"></span><span class="dish-price">₹160 / kg</span><div class="dish-control" data-dish="Boondi Laddu" data-price="160"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Besan Laddu</span><span class="dish-dots"></span><span class="dish-price">₹160 / kg</span><div class="dish-control" data-dish="Besan Laddu" data-price="160"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Jaipuri Laddu</span><span class="dish-dots"></span><span class="dish-price">₹200 / kg</span><div class="dish-control" data-dish="Jaipuri Laddu" data-price="200"></div></div>
+              </div>
+              <div class="menu-column">
+                <div class="menu-dish-row"><span class="dish-name">Dry Fruit Laddu</span><span class="dish-dots"></span><span class="dish-price">₹760 / kg</span><div class="dish-control" data-dish="Dry Fruit Laddu" data-price="760"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Aata Dry Fruit Laddu</span><span class="dish-dots"></span><span class="dish-price">₹460 / kg</span><div class="dish-control" data-dish="Aata Dry Fruit Laddu" data-price="460"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Til Laddu</span><span class="dish-dots"></span><span class="dish-price">₹400 / kg</span><div class="dish-control" data-dish="Til Laddu" data-price="400"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4: South Indian (New) -->
+        <div class="menu-category-panel" id="category-south">
+          <div class="menu-layout-grid">
+            <!-- Featured Dish -->
+            <div class="menu-featured-card">
+              <img src="masala_dosa.png" alt="Masala Dosa" class="menu-featured-img">
+              <div class="menu-featured-info">
+                <span class="menu-featured-tag">South Indian Favorite</span>
+                <h3>Masala Dosa</h3>
+                <p>Crispy fermented rice-lentil crepe filled with spiced potato mash, served with fresh chutneys and piping hot sambar.</p>
+                <span class="menu-featured-price">₹150</span>
+              </div>
+            </div>
+            <!-- All South Indian List -->
+            <div class="menu-items-list">
+              <div class="menu-column">
+                <div class="menu-dish-row"><span class="dish-name">Dian</span><span class="dish-dots"></span><span class="dish-price">₹100</span><div class="dish-control" data-dish="Dian" data-price="100"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Masala Dosa</span><span class="dish-dots"></span><span class="dish-price">₹150</span><div class="dish-control" data-dish="Masala Dosa" data-price="150"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Paneer Dosa</span><span class="dish-dots"></span><span class="dish-price">₹120</span><div class="dish-control" data-dish="Paneer Dosa" data-price="120"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Rava Dosa</span><span class="dish-dots"></span><span class="dish-price">₹120</span><div class="dish-control" data-dish="Rava Dosa" data-price="120"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Rava Masala Dosa</span><span class="dish-dots"></span><span class="dish-price">₹120</span><div class="dish-control" data-dish="Rava Masala Dosa" data-price="120"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Onion Rava Paneer Dosa</span><span class="dish-dots"></span><span class="dish-price">₹120</span><div class="dish-control" data-dish="Onion Rava Paneer Dosa" data-price="120"></div></div>
+              </div>
+              <div class="menu-column">
+                <div class="menu-dish-row"><span class="dish-name">Onion Rava Masala Dosa</span><span class="dish-dots"></span><span class="dish-price">₹120</span><div class="dish-control" data-dish="Onion Rava Masala Dosa" data-price="120"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Maisoor Masala Dosa</span><span class="dish-dots"></span><span class="dish-price">₹150</span><div class="dish-control" data-dish="Maisoor Masala Dosa" data-price="150"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Paneer Utpam</span><span class="dish-dots"></span><span class="dish-price">₹100</span><div class="dish-control" data-dish="Paneer Utpam" data-price="100"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Onion Utpam</span><span class="dish-dots"></span><span class="dish-price">₹100</span><div class="dish-control" data-dish="Onion Utpam" data-price="100"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Onion Tamoto Utpam</span><span class="dish-dots"></span><span class="dish-price">₹100</span><div class="dish-control" data-dish="Onion Tamoto Utpam" data-price="100"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Tamoto Utpam</span><span class="dish-dots"></span><span class="dish-price">₹100</span><div class="dish-control" data-dish="Tamoto Utpam" data-price="100"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 5: North Indian Curries (New) -->
+        <div class="menu-category-panel" id="category-curries">
+          <div class="menu-layout-grid">
+            <!-- Featured Dish -->
+            <div class="menu-featured-card">
+              <img src="dal_makhani.png" alt="Dal Makhani" class="menu-featured-img">
+              <div class="menu-featured-info">
+                <span class="menu-featured-tag">North Indian Classic</span>
+                <h3>Dal Makhani</h3>
+                <p>Black lentils slow-cooked overnight in cream, butter, and mild spices for a rich, signature velvet finish.</p>
+                <span class="menu-featured-price">₹200</span>
+              </div>
+            </div>
+            <!-- All Indian Dishes List -->
+            <div class="menu-items-list">
+              <div class="menu-column">
+                <div class="menu-dish-row"><span class="dish-name">Dal Makhni</span><span class="dish-dots"></span><span class="dish-price">₹200</span><div class="dish-control" data-dish="Dal Makhni" data-price="200"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Dal Handi</span><span class="dish-dots"></span><span class="dish-price">₹200</span><div class="dish-control" data-dish="Dal Handi" data-price="200"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Dal Tadka</span><span class="dish-dots"></span><span class="dish-price">₹100</span><div class="dish-control" data-dish="Dal Tadka" data-price="100"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Chana Masala</span><span class="dish-dots"></span><span class="dish-price">₹180</span><div class="dish-control" data-dish="Chana Masala" data-price="180"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Shahi Paneer</span><span class="dish-dots"></span><span class="dish-price">₹250</span><div class="dish-control" data-dish="Shahi Paneer" data-price="250"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Paneer Baluchi</span><span class="dish-dots"></span><span class="dish-price">₹300</span><div class="dish-control" data-dish="Paneer Baluchi" data-price="300"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Handi Paneer</span><span class="dish-dots"></span><span class="dish-price">₹250</span><div class="dish-control" data-dish="Handi Paneer" data-price="250"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Paneer Do Pyaja</span><span class="dish-dots"></span><span class="dish-price">₹250</span><div class="dish-control" data-dish="Paneer Do Pyaja" data-price="250"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Paneer Butter Masala</span><span class="dish-dots"></span><span class="dish-price">₹250</span><div class="dish-control" data-dish="Paneer Butter Masala" data-price="250"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Paneer Tikka Masala</span><span class="dish-dots"></span><span class="dish-price">₹300</span><div class="dish-control" data-dish="Paneer Tikka Masala" data-price="300"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Kadhai Paneer</span><span class="dish-dots"></span><span class="dish-price">₹250</span><div class="dish-control" data-dish="Kadhai Paneer" data-price="250"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Paneer Lababdaar</span><span class="dish-dots"></span><span class="dish-price">₹250</span><div class="dish-control" data-dish="Paneer Lababdaar" data-price="250"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Paneer Kali Mirch</span><span class="dish-dots"></span><span class="dish-price">₹250</span><div class="dish-control" data-dish="Paneer Kali Mirch" data-price="250"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Paneer Begam Bahar</span><span class="dish-dots"></span><span class="dish-price">₹300</span><div class="dish-control" data-dish="Paneer Begam Bahar" data-price="300"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Paneer Bhurji</span><span class="dish-dots"></span><span class="dish-price">₹300</span><div class="dish-control" data-dish="Paneer Bhurji" data-price="300"></div></div>
+              </div>
+              <div class="menu-column">
+                <div class="menu-dish-row"><span class="dish-name">Umang's Special Paneer</span><span class="dish-dots"></span><span class="dish-price">₹350</span><div class="dish-control" data-dish="Umang's Special Paneer" data-price="350"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Palak Paneer</span><span class="dish-dots"></span><span class="dish-price">₹200</span><div class="dish-control" data-dish="Palak Paneer" data-price="200"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Matar Paneer</span><span class="dish-dots"></span><span class="dish-price">₹220</span><div class="dish-control" data-dish="Matar Paneer" data-price="220"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Paneer Dhania Adraki</span><span class="dish-dots"></span><span class="dish-price">₹250</span><div class="dish-control" data-dish="Paneer Dhania Adraki" data-price="250"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Mixveg</span><span class="dish-dots"></span><span class="dish-price">₹200</span><div class="dish-control" data-dish="Mixveg" data-price="200"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Aaloo Zera</span><span class="dish-dots"></span><span class="dish-price">₹150</span><div class="dish-control" data-dish="Aaloo Zera" data-price="150"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Banarsi Dum Aaloo</span><span class="dish-dots"></span><span class="dish-price">₹150</span><div class="dish-control" data-dish="Banarsi Dum Aaloo" data-price="150"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Kumbi Do Pyaja</span><span class="dish-dots"></span><span class="dish-price">₹200</span><div class="dish-control" data-dish="Kumbi Do Pyaja" data-price="200"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Kumbi Masala</span><span class="dish-dots"></span><span class="dish-price">₹200</span><div class="dish-control" data-dish="Kumbi Masala" data-price="200"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Kumbi Kadhi</span><span class="dish-dots"></span><span class="dish-price">₹200</span><div class="dish-control" data-dish="Kumbi Kadhi" data-price="200"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Malai Kofta</span><span class="dish-dots"></span><span class="dish-price">₹250</span><div class="dish-control" data-dish="Malai Kofta" data-price="250"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Veg Kadhi</span><span class="dish-dots"></span><span class="dish-price">₹320</span><div class="dish-control" data-dish="Veg Kadhi" data-price="320"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Veg Kofta</span><span class="dish-dots"></span><span class="dish-price">₹150</span><div class="dish-control" data-dish="Veg Kofta" data-price="150"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Aloo Gobhi Masala</span><span class="dish-dots"></span><span class="dish-price">₹180</span><div class="dish-control" data-dish="Aloo Gobhi Masala" data-price="180"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Aaloo Matar</span><span class="dish-dots"></span><span class="dish-price">₹150</span><div class="dish-control" data-dish="Aaloo Matar" data-price="150"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 6: Tandoori Breads (New) -->
+        <div class="menu-category-panel" id="category-breads">
+          <div class="menu-layout-grid">
+            <!-- Featured Dish -->
+            <div class="menu-featured-card">
+              <img src="butter_naan.png" alt="Butter Naan" class="menu-featured-img">
+              <div class="menu-featured-info">
+                <span class="menu-featured-tag">Tandoor Special</span>
+                <h3>Garlic & Butter Naan</h3>
+                <p>Fresh clay-oven baked flatbread, glistening with pure butter and garnished with fresh coriander.</p>
+                <span class="menu-featured-price">₹30</span>
+              </div>
+            </div>
+            <!-- All Breads List -->
+            <div class="menu-items-list">
+              <div class="menu-column">
+                <div class="menu-dish-row"><span class="dish-name">Plain Tandoori Roti</span><span class="dish-dots"></span><span class="dish-price">₹8</span><div class="dish-control" data-dish="Plain Tandoori Roti" data-price="8"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Butter Tandoori Roti</span><span class="dish-dots"></span><span class="dish-price">₹12</span><div class="dish-control" data-dish="Butter Tandoori Roti" data-price="12"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Plain Naan</span><span class="dish-dots"></span><span class="dish-price">₹25</span><div class="dish-control" data-dish="Plain Naan" data-price="25"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Butter Naan</span><span class="dish-dots"></span><span class="dish-price">₹30</span><div class="dish-control" data-dish="Butter Naan" data-price="30"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Garlic Naan</span><span class="dish-dots"></span><span class="dish-price">₹40</span><div class="dish-control" data-dish="Garlic Naan" data-price="40"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Stuff Naan</span><span class="dish-dots"></span><span class="dish-price">₹60</span><div class="dish-control" data-dish="Stuff Naan" data-price="60"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Paneer Naan</span><span class="dish-dots"></span><span class="dish-price">₹120</span><div class="dish-control" data-dish="Paneer Naan" data-price="120"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Lachha Paratha</span><span class="dish-dots"></span><span class="dish-price">₹40</span><div class="dish-control" data-dish="Lachha Paratha" data-price="40"></div></div>
+              </div>
+              <div class="menu-column">
+                <div class="menu-dish-row"><span class="dish-name">Pudeena Paratha</span><span class="dish-dots"></span><span class="dish-price">₹40</span><div class="dish-control" data-dish="Pudeena Paratha" data-price="40"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Aaloo Paratha</span><span class="dish-dots"></span><span class="dish-price">₹60</span><div class="dish-control" data-dish="Aaloo Paratha" data-price="60"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Azwani Paratha</span><span class="dish-dots"></span><span class="dish-price">₹50</span><div class="dish-control" data-dish="Azwani Paratha" data-price="50"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Green Chilli Paratha</span><span class="dish-dots"></span><span class="dish-price">₹50</span><div class="dish-control" data-dish="Green Chilli Paratha" data-price="50"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Mix Paratha</span><span class="dish-dots"></span><span class="dish-price">₹80</span><div class="dish-control" data-dish="Mix Paratha" data-price="80"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Gobhi Paratha</span><span class="dish-dots"></span><span class="dish-price">₹80</span><div class="dish-control" data-dish="Gobhi Paratha" data-price="80"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Paneer Paratha</span><span class="dish-dots"></span><span class="dish-price">₹100</span><div class="dish-control" data-dish="Paneer Paratha" data-price="100"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 7: Rice & Salad (New) -->
+        <div class="menu-category-panel" id="category-rice">
+          <div class="menu-layout-grid">
+            <!-- Featured Dish -->
+            <div class="menu-featured-card">
+              <img src="gift_hamper.png" alt="Biryani" class="menu-featured-img">
+              <div class="menu-featured-info">
+                <span class="menu-featured-tag">Signature Rice</span>
+                <h3>Veg Biryani with Gravy</h3>
+                <p>Fragrant basmati rice layered with spiced vegetables, served alongside a rich masala gravy.</p>
+                <span class="menu-featured-price">₹180</span>
+              </div>
+            </div>
+            <!-- All Rice & Salad List -->
+            <div class="menu-items-list">
+              <div class="menu-column">
+                <h4 style="color: var(--color-primary); font-size: 1.15rem; margin-bottom: 12px; font-family: var(--font-display);">Rice & Pulao</h4>
+                <div class="menu-dish-row"><span class="dish-name">Plain Rice</span><span class="dish-dots"></span><span class="dish-price">₹100</span><div class="dish-control" data-dish="Plain Rice" data-price="100"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Zeera Rice</span><span class="dish-dots"></span><span class="dish-price">₹120</span><div class="dish-control" data-dish="Zeera Rice" data-price="120"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Peas Pulao</span><span class="dish-dots"></span><span class="dish-price">₹120</span><div class="dish-control" data-dish="Peas Pulao" data-price="120"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Veg Pulao</span><span class="dish-dots"></span><span class="dish-price">₹150</span><div class="dish-control" data-dish="Veg Pulao" data-price="150"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Veg Biryani with Gravy</span><span class="dish-dots"></span><span class="dish-price">₹180</span><div class="dish-control" data-dish="Veg Biryani with Gravy" data-price="180"></div></div>
+              </div>
+              <div class="menu-column">
+                <h4 style="color: var(--color-primary); font-size: 1.15rem; margin-bottom: 12px; font-family: var(--font-display);">Fresh Greens</h4>
+                <div class="menu-dish-row"><span class="dish-name">Green Salad</span><span class="dish-dots"></span><span class="dish-price">₹40</span><div class="dish-control" data-dish="Green Salad" data-price="40"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 8: Chinese Starters -->
+        <div class="menu-category-panel" id="category-starters">
+          <div class="menu-layout-grid">
+            <!-- Featured Dish -->
+            <div class="menu-featured-card">
+              <img src="paneer_tikka.png" alt="Chinese Starters" class="menu-featured-img">
+              <div class="menu-featured-info">
+                <span class="menu-featured-tag">Indo-Chinese Delights</span>
+                <h3>Chilli Paneer (Dry/Gravy)</h3>
+                <p>Crispy batter-fried paneer cubes tossed in garlic, soy sauce, and green chillies.</p>
+                <span class="menu-featured-price">₹250</span>
+              </div>
+            </div>
+            <!-- Chinese Starters List -->
+            <div class="menu-items-list">
+              <div class="menu-column">
+                <div class="menu-dish-row"><span class="dish-name">Chilli Paneer Dry</span><span class="dish-dots"></span><span class="dish-price">₹250</span><div class="dish-control" data-dish="Chilli Paneer Dry" data-price="250"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Chilli Paneer Gravy</span><span class="dish-dots"></span><span class="dish-price">₹250</span><div class="dish-control" data-dish="Chilli Paneer Gravy" data-price="250"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Chilli Gobi (Half)</span><span class="dish-dots"></span><span class="dish-price">₹60</span><div class="dish-control" data-dish="Chilli Gobi (Half)" data-price="60"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Chilli Gobi (Full)</span><span class="dish-dots"></span><span class="dish-price">₹100</span><div class="dish-control" data-dish="Chilli Gobi (Full)" data-price="100"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Chilli Mushroom (Half)</span><span class="dish-dots"></span><span class="dish-price">₹80</span><div class="dish-control" data-dish="Chilli Mushroom (Half)" data-price="80"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Chilli Mushroom (Full)</span><span class="dish-dots"></span><span class="dish-price">₹200</span><div class="dish-control" data-dish="Chilli Mushroom (Full)" data-price="200"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Veg Manchurian Dry</span><span class="dish-dots"></span><span class="dish-price">₹200</span><div class="dish-control" data-dish="Veg Manchurian Dry" data-price="200"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Veg Manchurian Gravy</span><span class="dish-dots"></span><span class="dish-price">₹250</span><div class="dish-control" data-dish="Veg Manchurian Gravy" data-price="250"></div></div>
+              </div>
+              <div class="menu-column">
+                <div class="menu-dish-row"><span class="dish-name">Veg Spring Roll (Half)</span><span class="dish-dots"></span><span class="dish-price">₹60</span><div class="dish-control" data-dish="Veg Spring Roll (Half)" data-price="60"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Veg Spring Roll (Full)</span><span class="dish-dots"></span><span class="dish-price">₹100</span><div class="dish-control" data-dish="Veg Spring Roll (Full)" data-price="100"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Chilli Potato (Half)</span><span class="dish-dots"></span><span class="dish-price">₹60</span><div class="dish-control" data-dish="Chilli Potato (Half)" data-price="60"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Chilli Potato (Full)</span><span class="dish-dots"></span><span class="dish-price">₹100</span><div class="dish-control" data-dish="Chilli Potato (Full)" data-price="100"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Honey Chilli Potato (Half)</span><span class="dish-dots"></span><span class="dish-price">₹70</span><div class="dish-control" data-dish="Honey Chilli Potato (Half)" data-price="70"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Honey Chilli Potato (Full)</span><span class="dish-dots"></span><span class="dish-price">₹120</span><div class="dish-control" data-dish="Honey Chilli Potato (Full)" data-price="120"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Veg Fried Rice</span><span class="dish-dots"></span><span class="dish-price">₹120</span><div class="dish-control" data-dish="Veg Fried Rice" data-price="120"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Veg Momos Steam</span><span class="dish-dots"></span><span class="dish-price">₹70</span><div class="dish-control" data-dish="Veg Momos Steam" data-price="70"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Veg Momos Tandoori</span><span class="dish-dots"></span><span class="dish-price">₹110</span><div class="dish-control" data-dish="Veg Momos Tandoori" data-price="110"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Paneer Momos</span><span class="dish-dots"></span><span class="dish-price">₹100</span><div class="dish-control" data-dish="Paneer Momos" data-price="100"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Veg Fried Momos</span><span class="dish-dots"></span><span class="dish-price">₹80</span><div class="dish-control" data-dish="Veg Fried Momos" data-price="80"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Paneer Fried Momos</span><span class="dish-dots"></span><span class="dish-price">₹110</span><div class="dish-control" data-dish="Paneer Fried Momos" data-price="110"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 9: Tandoori Snacks -->
+        <div class="menu-category-panel" id="category-tandoori-snacks">
+          <div class="menu-layout-grid">
+            <!-- Featured Dish -->
+            <div class="menu-featured-card">
+              <img src="paneer_tikka.png" alt="Tandoori Snacks" class="menu-featured-img">
+              <div class="menu-featured-info">
+                <span class="menu-featured-tag">Charcoal Charcoal</span>
+                <h3>Paneer Malai Tikka</h3>
+                <p>Soft paneer cubes marinated in milk cream, cheese, and mild spices, charcoal-grilled to perfection.</p>
+                <span class="menu-featured-price">₹250</span>
+              </div>
+            </div>
+            <!-- Tandoori Snacks List -->
+            <div class="menu-items-list">
+              <div class="menu-column">
+                <div class="menu-dish-row"><span class="dish-name">Paneer Tikka</span><span class="dish-dots"></span><span class="dish-price">₹200</span><div class="dish-control" data-dish="Paneer Tikka" data-price="200"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Paneer Malai Tikka</span><span class="dish-dots"></span><span class="dish-price">₹250</span><div class="dish-control" data-dish="Paneer Malai Tikka" data-price="250"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Afgani Paneer Tikka</span><span class="dish-dots"></span><span class="dish-price">₹250</span><div class="dish-control" data-dish="Afgani Paneer Tikka" data-price="250"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Somar Paneer Tikka</span><span class="dish-dots"></span><span class="dish-price">₹220</span><div class="dish-control" data-dish="Somar Paneer Tikka" data-price="220"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Mushroom Tikka</span><span class="dish-dots"></span><span class="dish-price">₹220</span><div class="dish-control" data-dish="Mushroom Tikka" data-price="220"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Masala Chaap (Half)</span><span class="dish-dots"></span><span class="dish-price">₹120</span><div class="dish-control" data-dish="Masala Chaap (Half)" data-price="120"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Masala Chaap (Full)</span><span class="dish-dots"></span><span class="dish-price">₹220</span><div class="dish-control" data-dish="Masala Chaap (Full)" data-price="220"></div></div>
+              </div>
+              <div class="menu-column">
+                <div class="menu-dish-row"><span class="dish-name">Malai Chaap (Half)</span><span class="dish-dots"></span><span class="dish-price">₹120</span><div class="dish-control" data-dish="Malai Chaap (Half)" data-price="120"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Malai Chaap (Full)</span><span class="dish-dots"></span><span class="dish-price">₹220</span><div class="dish-control" data-dish="Malai Chaap (Full)" data-price="220"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Chilli Chaap (Half)</span><span class="dish-dots"></span><span class="dish-price">₹120</span><div class="dish-control" data-dish="Chilli Chaap (Half)" data-price="120"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Chilli Chaap (Full)</span><span class="dish-dots"></span><span class="dish-price">₹220</span><div class="dish-control" data-dish="Chilli Chaap (Full)" data-price="220"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Afgani Chaap (Half)</span><span class="dish-dots"></span><span class="dish-price">₹130</span><div class="dish-control" data-dish="Afgani Chaap (Half)" data-price="130"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Afgani Chaap (Full)</span><span class="dish-dots"></span><span class="dish-price">₹230</span><div class="dish-control" data-dish="Afgani Chaap (Full)" data-price="230"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Chatpati Chaap (Half)</span><span class="dish-dots"></span><span class="dish-price">₹130</span><div class="dish-control" data-dish="Chatpati Chaap (Half)" data-price="130"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Chatpati Chaap (Full)</span><span class="dish-dots"></span><span class="dish-price">₹230</span><div class="dish-control" data-dish="Chatpati Chaap (Full)" data-price="230"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Gravy Chaap (Half)</span><span class="dish-dots"></span><span class="dish-price">₹130</span><div class="dish-control" data-dish="Gravy Chaap (Half)" data-price="130"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Gravy Chaap (Full)</span><span class="dish-dots"></span><span class="dish-price">₹230</span><div class="dish-control" data-dish="Gravy Chaap (Full)" data-price="230"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 10: Chaat Chatpata -->
+        <div class="menu-category-panel" id="category-chaat">
+          <div class="menu-layout-grid">
+            <!-- Featured Dish -->
+            <div class="menu-featured-card">
+              <img src="dahi_bhalle.png" alt="Dahi Bhalle" class="menu-featured-img">
+              <div class="menu-featured-info">
+                <span class="menu-featured-tag">Chaat Delight</span>
+                <h3>Dahi Bhalle</h3>
+                <p>Cool whisked yogurt over soft lentil fritters, drizzled with spicy green and sweet tamarind chutneys.</p>
+                <span class="menu-featured-price">₹50</span>
+              </div>
+            </div>
+            <!-- All Chaat List -->
+            <div class="menu-items-list">
+              <div class="menu-column">
+                <div class="menu-dish-row"><span class="dish-name">Aaloo Tikki</span><span class="dish-dots"></span><span class="dish-price">₹50</span><div class="dish-control" data-dish="Aaloo Tikki" data-price="50"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Dahi Bhalle</span><span class="dish-dots"></span><span class="dish-price">₹50</span><div class="dish-control" data-dish="Dahi Bhalle" data-price="50"></div></div>
+              </div>
+              <div class="menu-column">
+                <div class="menu-dish-row"><span class="dish-name">Gol Gappe (Suji) (5 Pcs)</span><span class="dish-dots"></span><span class="dish-price">₹20</span><div class="dish-control" data-dish="Gol Gappe (Suji) (5 Pcs)" data-price="20"></div></div>
+                <div class="menu-dish-row"><span class="dish-name">Dahi Sonth Papdi (5 Pcs)</span><span class="dish-dots"></span><span class="dish-price">₹30</span><div class="dish-control" data-dish="Dahi Sonth Papdi (5 Pcs)" data-price="30"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Separator Line -->
+  <div class="section-separator"></div>
+
+  <!-- Section 3: Testimonials (Google Reviews & Guest Experience) -->
+  <section class="section" id="reviews-section" style="background: radial-gradient(circle at center, #260a0a 0%, #0d0202 100%) !important; padding: 100px 0 60px; border-top: 1px solid rgba(255,255,255,0.03);">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: center; margin: 0 auto 60px;">
+        <span class="eyebrow" style="color: var(--color-primary);">GUEST EXPERIENCES</span>
+        <h2 class="hero-headline" style="font-size: 3rem;">What Our Customers Say</h2>
+        <p style="margin: 0 auto; max-width: 60ch;">Real reviews from our Google Business profile. We take pride in delivering the highest quality sweets and service.</p>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="reveal testimonial-grid">
+        
+        <!-- Review 1: Khushi Jain -->
+        <div class="testimonial-card" style="background: rgba(212, 175, 55, 0.03); border: 1px solid rgba(212, 175, 55, 0.18); border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 20px; transition: var(--transition-smooth); backdrop-filter: blur(5px); box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+          <div style="display: flex; gap: 4px; color: var(--color-primary);">
+            <i class="ph ph-star-fill"></i>
+            <i class="ph ph-star-fill"></i>
+            <i class="ph ph-star-fill"></i>
+            <i class="ph ph-star-fill"></i>
+            <i class="ph ph-star-fill"></i>
+          </div>
+          <p style="font-style: italic; color: var(--color-text-primary); font-size: 1.05rem; line-height: 1.7; flex-grow: 1;">
+            "The staff was friendly and helped me choose the best options."
+          </p>
+          <div style="display: flex; align-items: center; gap: 14px; border-top: 1px solid rgba(255,255,255,0.04); padding-top: 20px;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background-color: rgba(212,175,55,0.1); border: 1px solid var(--color-primary); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 700; color: var(--color-primary);">
+              KJ
+            </div>
+            <div>
+              <h4 style="font-family: var(--font-display); font-size: 1rem; color: var(--color-text-primary); font-weight: 600;">Khushi Jain</h4>
+              <span style="font-size: 0.75rem; color: var(--color-text-muted);">Verified Google Reviewer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2: Dev Mailk -->
+        <div class="testimonial-card" style="background: rgba(212, 175, 55, 0.03); border: 1px solid rgba(212, 175, 55, 0.18); border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 20px; transition: var(--transition-smooth); backdrop-filter: blur(5px); box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+          <div style="display: flex; gap: 4px; color: var(--color-primary);">
+            <i class="ph ph-star-fill"></i>
+            <i class="ph ph-star-fill"></i>
+            <i class="ph ph-star-fill"></i>
+            <i class="ph ph-star-fill"></i>
+            <i class="ph ph-star-fill"></i>
+          </div>
+          <p style="font-style: italic; color: var(--color-text-primary); font-size: 1.05rem; line-height: 1.7; flex-grow: 1;">
+            "Tasty food + good quality"
+          </p>
+          <div style="display: flex; align-items: center; gap: 14px; border-top: 1px solid rgba(255,255,255,0.04); padding-top: 20px;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background-color: rgba(212,175,55,0.1); border: 1px solid var(--color-primary); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 700; color: var(--color-primary);">
+              DM
+            </div>
+            <div>
+              <h4 style="font-family: var(--font-display); font-size: 1rem; color: var(--color-text-primary); font-weight: 600;">Dev Mailk</h4>
+              <span style="font-size: 0.75rem; color: var(--color-text-muted);">Verified Customer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3: Akash Kumar -->
+        <div class="testimonial-card" style="background: rgba(212, 175, 55, 0.03); border: 1px solid rgba(212, 175, 55, 0.18); border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 20px; transition: var(--transition-smooth); backdrop-filter: blur(5px); box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+          <div style="display: flex; gap: 4px; color: var(--color-primary);">
+            <i class="ph ph-star-fill"></i>
+            <i class="ph ph-star-fill"></i>
+            <i class="ph ph-star-fill"></i>
+            <i class="ph ph-star-fill"></i>
+            <i class="ph ph-star-fill"></i>
+          </div>
+          <p style="font-style: italic; color: var(--color-text-primary); font-size: 1.05rem; line-height: 1.7; flex-grow: 1;">
+            "I ordered sweets for a special occasion and the experience was excellent."
+          </p>
+          <div style="display: flex; align-items: center; gap: 14px; border-top: 1px solid rgba(255,255,255,0.04); padding-top: 20px;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background-color: rgba(212,175,55,0.1); border: 1px solid var(--color-primary); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 700; color: var(--color-primary);">
+              AK
+            </div>
+            <div>
+              <h4 style="font-family: var(--font-display); font-size: 1rem; color: var(--color-text-primary); font-weight: 600;">Akash Kumar</h4>
+              <span style="font-size: 0.75rem; color: var(--color-text-muted);">Verified Customer</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Separator Line -->
+  <div class="section-separator"></div>
+
+  <!-- Footer (Royal Red & Gold theme with Google Business information) -->
+  
+  <footer class="footer" style="background-color: #080101; padding: 80px 0 40px; position: relative;">
+    <div class="container" style="display: grid; grid-template-columns: 1fr; gap: 40px;">
+      
+      <!-- Decorative Centered Ornament -->
+      <div style="text-align: center; margin-bottom: 20px;">
+        <span style="color: var(--color-primary); font-size: 1.5rem; letter-spacing: 0.15em; filter: drop-shadow(0 2px 8px rgba(212, 175, 55, 0.3));">⚜️ ✦ ⚜️</span>
+      </div>
+
+      <!-- Footer Grid Columns -->
+      <div class="footer-grid">
+        <!-- Column 1: Brand Info & Google Reviews -->
+        <div class="footer-col" style="display: flex; flex-direction: column; gap: 18px;">
+          <img src="Umang_sweetslogo.png" alt="Umang Sweets Logo" style="height: 70px; width: auto; object-fit: contain; align-self: flex-start; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));">
+          <p style="font-size: 0.95rem; color: var(--color-text-muted); max-width: 32ch; line-height: 1.6;">
+            Handcrafting traditional Indian sweets and premium delicacies with absolute purity, legacy recipes, and love.
+          </p>
+          
+          <!-- Premium Google Rating Badge -->
+          <div class="google-rating-card" style="display: inline-flex; align-items: center; gap: 14px; background: rgba(212, 175, 55, 0.03); border: 1px solid rgba(212, 175, 55, 0.18); border-radius: 16px; padding: 14px 20px; align-self: flex-start; box-shadow: 0 4px 20px rgba(0,0,0,0.15); backdrop-filter: blur(5px);">
+            <!-- Colored G Google Icon -->
+            <div style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 800; display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 50%; background-color: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); color: #fff;">
+              <span style="background: linear-gradient(135deg, #4285F4 25%, #EA4335 25% 50%, #FBBC05 50% 75%, #34A853 75%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">G</span>
+            </div>
+            <div>
+              <div style="display: flex; align-items: center; gap: 4px; color: var(--color-primary); font-weight: 800; font-size: 1.05rem;">
+                5.0 
+                <span style="display: flex; gap: 2px; margin-left: 4px;">
+                  <i class="ph ph-star-fill" style="font-size: 0.85rem;"></i>
+                  <i class="ph ph-star-fill" style="font-size: 0.85rem;"></i>
+                  <i class="ph ph-star-fill" style="font-size: 0.85rem;"></i>
+                  <i class="ph ph-star-fill" style="font-size: 0.85rem;"></i>
+                  <i class="ph ph-star-fill" style="font-size: 0.85rem;"></i>
+                </span>
+              </div>
+              <span style="font-size: 0.75rem; color: var(--color-text-muted); font-weight: 500;">22 Google Reviews · Sweets Shop</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col" style="display: flex; flex-direction: column; gap: 20px;">
+          <h4 style="font-family: var(--font-display); font-size: 1.1rem; color: var(--color-primary); letter-spacing: 0.08em; font-weight: 700; text-transform: uppercase;">Navigation</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 0.95rem;">
+            <li>
+              <a href="#" style="color: var(--color-text-muted); text-decoration: none; display: flex; align-items: center; gap: 8px; transition: var(--transition-smooth);" onmouseover="this.style.color='var(--color-primary)'; this.style.transform='translateX(4px)'" onmouseout="this.style.color='var(--color-text-muted)'; this.style.transform='translateX(0)'">
+                <i class="ph ph-caret-right" style="font-size: 0.85rem;"></i> Our Story
+              </a>
+            </li>
+            <li>
+              <a href="#menu-section" style="color: var(--color-text-muted); text-decoration: none; display: flex; align-items: center; gap: 8px; transition: var(--transition-smooth);" onmouseover="this.style.color='var(--color-primary)'; this.style.transform='translateX(4px)'" onmouseout="this.style.color='var(--color-text-muted)'; this.style.transform='translateX(0)'">
+                <i class="ph ph-caret-right" style="font-size: 0.85rem;"></i> Explore Menu
+              </a>
+            </li>
+            <li>
+              <a href="#reviews-section" style="color: var(--color-text-muted); text-decoration: none; display: flex; align-items: center; gap: 8px; transition: var(--transition-smooth);" onmouseover="this.style.color='var(--color-primary)'; this.style.transform='translateX(4px)'" onmouseout="this.style.color='var(--color-text-muted)'; this.style.transform='translateX(0)'">
+                <i class="ph ph-caret-right" style="font-size: 0.85rem;"></i> Guest Reviews
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact & Address Details -->
+        <div class="footer-col" style="display: flex; flex-direction: column; gap: 20px;">
+          <h4 style="font-family: var(--font-display); font-size: 1.1rem; color: var(--color-primary); letter-spacing: 0.08em; font-weight: 700; text-transform: uppercase;">Visit Us</h4>
+          <div style="display: flex; flex-direction: column; gap: 18px; font-size: 0.95rem;">
+            <!-- Address link -->
+            <a href="https://www.google.com/maps/search/?api=1&query=Umang+Sweets+Shop+no.+1+Shingawali+Road+Aminagar+Sarai+Uttar+Pradesh+250606" target="_blank" style="display: flex; align-items: flex-start; gap: 12px; text-decoration: none; transition: var(--transition-smooth);" onmouseover="this.style.color='var(--color-primary)'" onmouseout="this.style.color='initial'">
+              <div style="width: 32px; height: 32px; border-radius: 50%; background-color: rgba(212,175,55,0.06); border: 1px solid rgba(212,175,55,0.15); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="ph ph-map-pin" style="color: var(--color-primary); font-size: 1.1rem;"></i>
+              </div>
+              <div>
+                <p style="color: var(--color-text-primary); font-size: 0.9rem; line-height: 1.5; font-weight: 500;">Shop no. 1, Shingawali Road,<br>Aminagar Sarai, UP 250606</p>
+                <span style="font-size: 0.75rem; color: var(--color-primary); font-weight: 600; display: inline-flex; align-items: center; gap: 4px; margin-top: 4px;">Get Directions <i class="ph ph-arrow-square-out"></i></span>
+              </div>
+            </a>
+            <!-- Phone -->
+            <a href="tel:07037106909" style="display: flex; align-items: center; gap: 12px; text-decoration: none; transition: var(--transition-smooth);" onmouseover="this.style.color='var(--color-primary)'" onmouseout="this.style.color='initial'">
+              <div style="width: 32px; height: 32px; border-radius: 50%; background-color: rgba(212,175,55,0.06); border: 1px solid rgba(212,175,55,0.15); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="ph ph-phone" style="color: var(--color-primary); font-size: 1.1rem;"></i>
+              </div>
+              <span style="color: var(--color-text-primary); font-size: 0.9rem; font-weight: 600;">070371 06909</span>
+            </a>
+            <!-- Hours -->
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="width: 32px; height: 32px; border-radius: 50%; background-color: rgba(212,175,55,0.06); border: 1px solid rgba(212,175,55,0.15); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="ph ph-clock" style="color: var(--color-primary); font-size: 1.1rem;"></i>
+              </div>
+              <p style="color: var(--color-text-primary); font-size: 0.9rem; font-weight: 500;">
+                Daily: <span style="color: #27ae60; font-weight: 700;">Open</span> · Closes 11:00 PM
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Bottom -->
+      <div style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 30px; text-align: center; font-size: 0.8rem; color: rgba(255,255,255,0.2); display: flex; flex-direction: column; gap: 10px; align-items: center;">
+        <p>© 2026 Umang Sweets. All Rights Reserved. Crafted with Purity & Pride.</p>
+      </div>
+      
+    </div>
+  </footer>
+
+  <!-- Floating Cart Button -->
+  <button class="cart-floating-btn" id="cart-toggle" onclick="toggleCartDrawer()">
+    <i class="ph ph-shopping-bag"></i>
+    <span class="cart-count-badge" id="cart-badge-count">0</span>
+  </button>
+
+  <!-- Cart Sidebar Drawer -->
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header">
+      <h3>Your Sweet Basket</h3>
+      <button class="close-cart-btn" onclick="toggleCartDrawer()">×</button>
+    </div>
+    <div class="cart-drawer-items" id="cart-drawer-items">
+      <p class="cart-empty-message">Your basket is empty.<br>Add some delicious items!</p>
+    </div>
+    <div class="cart-drawer-footer">
+      <div class="cart-total-row">
+        <span>Total:</span>
+        <span id="cart-total-val">₹0</span>
+      </div>
+      <button class="btn btn-primary cart-checkout-btn" onclick="placeCartOrder()">Place Order via WhatsApp</button>
+    </div>
+  </div>
+  <div class="cart-overlay" id="cart-overlay" onclick="toggleCartDrawer()"></div>
+
+  <!-- Webpage Interactivity Logic -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.git
+.DS_Store
+.gemini
+*.log
+docker-compose.yml
+Dockerfile
+.dockerignore
