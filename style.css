@@ -301,6 +301,7 @@ a {
   align-items: center;
   overflow: hidden;
   padding-top: 72px; /* Header clearance */
+  background-color: #140303;
 }
 
 .hero-video-bg {
