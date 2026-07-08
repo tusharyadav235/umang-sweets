@@ -26,15 +26,19 @@
         <li><a href="#menu-section" class="nav-link">Explore Menu</a></li>
       </ul>
       
-      <div>
+      <div style="display: flex; align-items: center; gap: 16px;">
         <a href="#menu-section" class="btn btn-primary nav-cta-btn">Order Online</a>
+        <!-- Mobile Nav Toggle Button -->
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Navigation" onclick="toggleMobileNav()">
+          <i class="ph ph-list" style="font-size: 1.8rem; color: #fff;"></i>
+        </button>
       </div>
     </div>
   </nav>
 
   <!-- Video Hero Section (min-h-[100dvh], Hero stack discipline: max 4 text items) -->
   <header class="hero">
-    <video class="hero-video-bg" autoplay loop muted playsinline id="hero-video">
+    <video class="hero-video-bg" autoplay loop muted playsinline id="hero-video" poster="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?q=80&w=1200&auto=format">
       <source src="USvideo2.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -46,7 +50,7 @@
         <!-- Eyebrow brand label -->
         <span class="eyebrow">Umang Sweets</span>
         
-        <h1 class="hero-headline" style="font-size: 4.5rem; font-weight: 900; letter-spacing: 0.05em; margin-bottom: 20px;">शुद्ध स्वाद</h1>
+        <h1 class="hero-headline" style="font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 900; letter-spacing: 0.05em; margin-bottom: 20px;">शुद्ध स्वाद</h1>
         
         <!-- Shorter subtext tag -->
         <p class="hero-subtext" style="font-size: 1.15rem; max-width: 35ch;">
@@ -369,7 +373,7 @@
           <div class="menu-layout-grid">
             <!-- Featured Dish -->
             <div class="menu-featured-card">
-              <img src="gift_hamper.png" alt="Biryani" class="menu-featured-img">
+              <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?q=80&w=600&auto=format&fit=crop" alt="Biryani" class="menu-featured-img">
               <div class="menu-featured-info">
                 <span class="menu-featured-tag">Signature Rice</span>
                 <h3>Veg Biryani with Gravy</h3>
@@ -737,6 +741,16 @@
     </div>
   </div>
   <div class="cart-overlay" id="cart-overlay" onclick="toggleCartDrawer()"></div>
+
+  <!-- Mobile Nav Overlay & Menu -->
+  <div class="mobile-nav-menu" id="mobile-nav-menu">
+    <button class="close-mobile-nav" onclick="toggleMobileNav()">×</button>
+    <a href="#" onclick="toggleMobileNav()">Our Story</a>
+    <a href="#menu-section" onclick="toggleMobileNav()">Menu</a>
+    <a href="#reviews-section" onclick="toggleMobileNav()">Reviews</a>
+    <a href="#menu-section" class="btn btn-primary" onclick="toggleMobileNav()" style="margin-top: 20px; padding: 12px 30px;">Order Online</a>
+  </div>
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay" onclick="toggleMobileNav()"></div>
 
   <!-- Webpage Interactivity Logic -->
   <script src="script.js?v=1.0.1"></script>

@@ -325,7 +325,25 @@ document.addEventListener('DOMContentLoaded', () => {
     "gift_hamper.png"
   ];
   new ImageStack('gallery-stack', galleryImages);
+
+  // Programmatically trigger video play to override aggressive mobile power-saving autoplays
+  const video = document.getElementById('hero-video');
+  if (video) {
+    video.play().catch(err => {
+      console.log("Autoplay was prevented by browser: ", err);
+    });
+  }
 });
+
+// Toggle Mobile Nav Menu Overlay
+function toggleMobileNav() {
+  const menu = document.getElementById('mobile-nav-menu');
+  const overlay = document.getElementById('mobile-nav-overlay');
+  if (menu && overlay) {
+    menu.classList.toggle('active');
+    overlay.classList.toggle('active');
+  }
+}
 
 // Execute right away just in case DOMContentLoaded has already fired
 renderBasket();
