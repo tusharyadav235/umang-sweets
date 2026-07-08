@@ -1566,6 +1566,13 @@ a {
   opacity: 1;
 }
 
+@media (min-width: 1024px) {
+  .mobile-nav-menu,
+  .mobile-nav-overlay {
+    display: none !important;
+  }
+}
+
 
 
 
