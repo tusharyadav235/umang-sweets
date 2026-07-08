@@ -302,9 +302,6 @@ a {
   overflow: hidden;
   padding-top: 72px; /* Header clearance */
   background-color: #140303;
-  background-image: url('hero_poster.png');
-  background-size: cover;
-  background-position: center;
 }
 
 .hero-video-bg {
